@@ -1,0 +1,39 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "gauntlet-loop",
+  "version": "0.1.0",
+  "description": "Iteratively improve a product or artifact against an inspectable quality bar using sequential rounds, blind A/B comparison, one-gap-at-a-time fixes and disk-backed state.",
+  "author": {
+    "name": "studioigor",
+    "url": "https://github.com/studioigor"
+  },
+  "homepage": "https://github.com/studioigor/game-exp-skills",
+  "repository": "https://github.com/studioigor/game-exp-skills",
+  "keywords": [
+    "game-development",
+    "skills",
+    "studioigor"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Gauntlet Loop",
+        "shortDescription": "Polish against a hard bar",
+        "longDescription": "Run a sequential quality loop: build or capture the deliverable, compare it blindly against a concrete bar, commit the verdict before reveal, fix the single largest gap, and repeat. Supports games, apps, UI, images, 3D, video, text and code.",
+        "developerName": "studioigor",
+        "category": "Developer Tools",
+        "capabilities": [
+          "Blind A/B comparison",
+          "Iterative polishing",
+          "Quality gates",
+          "Disk-backed runs"
+        ],
+        "defaultPrompt": [
+          "Run a gauntlet loop against this reference.",
+          "Keep improving this until it beats the quality bar.",
+          "Polish this game against these screenshots."
+        ]
+      }
+    }
+  }
+}

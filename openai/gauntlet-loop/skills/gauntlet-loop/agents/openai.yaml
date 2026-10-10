@@ -1,0 +1,4 @@
+interface:
+  display_name: "Gauntlet Loop"
+  short_description: "Итеративно доводит работу до эталона"
+  default_prompt: "Используй $gauntlet-loop, чтобы итеративно довести эту работу до конкретного эталона и завершить только по честным stop conditions."

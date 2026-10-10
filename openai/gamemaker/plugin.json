@@ -1,0 +1,40 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "gamemaker",
+  "version": "0.1.0",
+  "description": "Production ladder that takes a game ambition, GDD or reference set through brief, design, harness, vertical slice, systems, content, polish and release gates.",
+  "author": {
+    "name": "studioigor",
+    "url": "https://github.com/studioigor"
+  },
+  "homepage": "https://github.com/studioigor/game-exp-skills",
+  "repository": "https://github.com/studioigor/game-exp-skills",
+  "keywords": [
+    "game-development",
+    "skills",
+    "studioigor"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Gamemaker",
+        "shortDescription": "Build a full game in stages",
+        "longDescription": "Take a game ambition, specification or reference set through a production ladder with explicit scope, pillars, design, harness, vertical slice, systems, content, polishing and release gates. The workflow is designed to avoid polishing incomplete products or declaring victory on a single demo level.",
+        "developerName": "studioigor",
+        "category": "Developer Tools",
+        "capabilities": [
+          "Game production",
+          "Scope contracts",
+          "Vertical slice",
+          "Content completion",
+          "Release gates"
+        ],
+        "defaultPrompt": [
+          "Build a full game from this idea.",
+          "Implement this GDD as a complete game.",
+          "Take this half-built game to release."
+        ]
+      }
+    }
+  }
+}
